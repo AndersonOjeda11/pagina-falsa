@@ -14,13 +14,12 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should explain that the publication period has ended', async () => {
+  it('should show a generic not-found error', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain(
-      'El periodo de publicación ha finalizado',
-    );
-    expect(compiled.textContent).toContain('comuníquese con el administrador');
+    expect(compiled.querySelector('h1')?.textContent).toContain('404: NOT_FOUND');
+    expect(compiled.textContent).toContain('La página que buscas no existe');
+    expect(compiled.textContent).toContain('Código de estado: 404');
   });
 });

@@ -1,6 +1,6 @@
-# Aviso de publicación finalizada
+# Página de error 404
 
-Aplicación Angular de una sola página que informa que terminó el periodo de publicación de un proyecto e indica al visitante comunicarse con su administrador para solicitar la reactivación.
+Aplicación Angular de una sola página con un mensaje 404 genérico y minimalista. Informa al visitante que la página no existe o ya no está disponible.
 
 ## Requisitos
 
