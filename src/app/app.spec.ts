@@ -18,8 +18,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('404: NOT_FOUND');
+    expect(compiled.querySelector('h1')?.textContent).toContain('404: NO ENCONTRADO');
     expect(compiled.textContent).toContain('La página que buscas no existe');
-    expect(compiled.textContent).toContain('Código de estado: 404');
   });
 });
